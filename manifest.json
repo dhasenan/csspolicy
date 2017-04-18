@@ -1,0 +1,29 @@
+{
+
+  "description": "Lets you whitelist sites to use CSS.",
+  "manifest_version": 2,
+  "name": "CSS Policy",
+  "version": "0.2",
+  "homepage_url": "https://github.com/dhasenan/csspolicy",
+  "icons": {
+    "48": "icons/policy_button.png"
+  },
+
+  "permissions": [
+    "activeTab",
+		"storage"
+  ],  
+
+  "browser_action": {
+    "default_icon": "icons/policy_button.png",
+    "default_title": "CSS Policy",
+    "default_popup": "popup/css_policy.html"
+  },
+  
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["csspolicy.js"]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css_policy.css"/>
+	</head>
+
+	<body>
+		<div>
+			<div><label for="allowedHosts">Sites allowed to use CSS:</label></div>
+			<div><textarea rows=10 cols=50 id="allowedHosts"></textarea></div>
+			<div><a id="update">Update</a></div>
+		</div>
+		<div>
+			<p><strong>Note:</strong> This will take effect immediately only for the current tab. Reload to
+			see effects on other tabs.</p>
+			<p>One site per line. Do not include 'http://' or 'https://'.</p>
+			<p>Example:
+			<pre>
+google.com
+facebook.com
+blog.ikeran.org
+			</pre>
+			</p>
+		</div>
+
+		<div>
+			<pre id="lert">no messages</pre>
+		</div>
+		<script src="css_policy.js"></script>
+	</body>
+
+</html>
